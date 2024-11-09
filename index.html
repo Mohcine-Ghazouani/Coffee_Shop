@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe de Qualite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="">
+    <div class="container">
+        <header>
+            <div class="title">
+                <img src="images/logo.jpg" alt="Logo" width="80px">
+                <h3>Cafe de Qualite</h3>
+            </div>
+            <nav>
+                <a class="navbar" href="#home">Accueil</a>
+                <a class="navbar" href="#Produit">Produit</a>
+                <select class="navbar" name="filter">
+                    <option value="filter">all categories</option>
+                    <option value="Whole Bean Coffee">Whole Bean</option>
+                    <option value="Instant Coffee">Instant</option>
+                    <option value="Espresso">Espresso</option>
+                </select>
+                <button class="navbar navbar-recherche">Recherche</button>
+            </nav>
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="search here">
+            </div>
+            <div class="icon-cart">
+                <img src="images/shop_icon.png" alt="">
+                <span>0</span>
+            </div>
+        </header>
+        <section class="home" id="home">
+            <div class="content">
+                <h1>Cafe de Qualite</h1>
+                <p>Welcome to Café de Qualité, your premier online destination for the finest coffee products.</p>
+            </div>
+        </section>
+
+        <div class="ListProduct" id="Produit">
+            <div class="item">
+                <!-- <img src="./images/Bonka.jpg" alt="">
+                <h2 class="name">name</h2>
+                <div class="category">category</div>
+                <div class="price">prix</div>
+                <div class="promotion">10%</div>
+                <button class="addCart"></button> -->
+            </div>
+        </div>
+
+    </div>
+
+    <div class="cartTab">
+        <h1>shopping cart</h1>
+        <div class="ListCart">
+        </div>
+        <div class="btn">
+            <button class="close">close</button>
+            <button class="checkOut" id="checkOut">checkOut</button>
+        </div>
+    </div>
+    <div class="commande" id="commande" style="display: none;" >
+        <h3>commande </h3>
+        <form id="commande-form">
+            <table>
+                <tr>
+                    <td>
+                        <label>Nom:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="user-name" name="user_name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Prenom:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="user-family-name" name="user_family_name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Adresse:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="user-address" name="user_address" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Numéro de téléphone:</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="user-phone" name="user_phone" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Méthode de paiement:</label>
+                    </td>
+                    <td>
+                        <select id="payment-method" name="payment_method" required>
+                            <option value="credit-card">Carte de crédit</option>
+                            <option value="CIH">CIH</option>
+                            <option value="BMCE">BMCE</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="cash-on-delivery">Paiement à la livraison</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="commande-btn" type="submit" value="Confirmer la commande">
+                        <div class="confirmation-message" style="display: none;"></div>
+                    </td>
+
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
