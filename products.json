@@ -71,6 +71,14 @@
       "price": "6.49",
       "promotion": "Buy 1, Get 1 50% Off",
       "image": "images/Eight.jpg"
+    },
+    {
+      "id":10,
+      "name": "Eight O'Clock Coffee",
+      "categories": "Whole Bean Coffee",
+      "price": "6.49",
+      "promotion": "Buy 1, Get 1 50% Off",
+      "image": "images/Eight.jpg"
     }
   ]
   
