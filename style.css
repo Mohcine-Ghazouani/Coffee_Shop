@@ -1,0 +1,351 @@
+:root {
+    --main-color: #719192;
+    --second-color: #dfcdc3;
+    --black: #13131a;
+    --white: #fff;
+    --bg: #3c4245;
+    --hbg: #5f6769;
+    --border: 1px solid #ddd;
+}
+
+
+body{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: calc(100% - 40px); 
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform 0.5s;
+}
+img{
+    width: 30px;
+}
+header{
+    position: fixed;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px ;
+    padding: 0px 20px;
+    border-radius: 4px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg);
+    color: var(--white);
+}
+header .title img{
+    border-radius: 50%;
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+}
+header .title {
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: right;
+}
+header nav .navbar{
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    padding: 5px 7px 5px 7px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: var(--white);
+    background-color:var(--bg) ;
+    border: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+header nav .navbar:hover{
+    border-radius: 8px;
+    background-color: var(--hbg);
+}
+
+
+header .search-form{
+    position: absolute;
+    top:100%; right: 15%;
+    background: #fff;
+    width: 20rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    border-radius: 5px;
+}
+
+header .search-form.active{
+    transform: scaleY(1);
+}
+
+header .search-form input{
+    height: 100%;
+    width: 100%;
+    font-size: 1rem;
+    color:var(--black);
+    padding:1rem;
+    text-transform: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+header .icon-cart{
+    position: relative;
+    cursor: pointer;
+}
+header .icon-cart:hover{
+    border-radius: 8px;
+    background-color: var(--hbg);
+}
+
+header .icon-cart img{
+    width: 40px;
+}
+
+header .icon-cart span{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background: red;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -20px
+}
+
+
+
+.home{
+    width: 100%;
+    height: 800px;
+    color: var(--white);
+    background:url(images/cup.jpg) no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    text-align: left;
+}
+
+.home .content{
+    max-width: 60rem;
+    padding-left: 10%;
+}
+
+.home .content h1{
+    font-size: 6rem;
+    
+    color:#fff;
+}
+.home .content p{
+    font-size: 2rem;
+    color: #eee;
+}
+
+
+
+
+.ListProduct .item img{
+    width: 90%;
+}
+.ListProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.ListProduct .item{
+    background-color: #eeeee6;
+    padding: 20px;
+    border-radius: 20px;
+}
+.ListProduct .item h2{
+    font-weight: 500;
+    font-size: large;
+}
+.ListProduct .item .price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+.ListProduct .item button{
+    background-color: #333;
+    color:#eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+.cartTab{
+    width: 400px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    position: fixed;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: 0.5s;
+}
+body.showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .btn button{
+    background-color: var(--white);
+    border: none;
+    
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.cartTab .btn button:hover{
+    background-color: rgb(0, 180, 0);
+    color:var(--white);
+}
+.cartTab .btn .close:hover{
+    background-color: firebrick;
+    color:var(--white);
+}
+
+.cartTab .ListCart .item img{
+    width: 100%;
+}
+.cartTab .ListCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.ListCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ListCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+}
+.ListCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.ListCart{
+    overflow: auto;
+}
+.ListCart::-webkit-scrollbar{
+    width: 0;
+}
+
+.commande{
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #fcf8f3;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(56, 56, 56);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+.commande input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid ;
+    border-radius: 5px;
+}
+.commande select{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid ;
+    border-radius: 5px;
+}
+.commande .commande-btn{
+    background-color: lightseagreen;
+    color: var(--white);
+
+}
+
+
+
+@media screen and (max-width: 992px){
+    .ListProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .container{
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .ListProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container{
+        padding: 10px;
+    }
+    header nav {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 476px){
+    .ListProduct{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container{
+        padding: 5px;
+    }
+    header .title{
+        flex-direction: column;
+    }
+    header nav {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    
+}
+
+
