@@ -1,76 +1,98 @@
 [
-    {
-      "id":1,
-      "name": "Gevalia",
-      "categories": "Whole Bean Coffee",
-      "price": "6.99",
-      "promotion": "Buy 2, Get 1 Free",
-      "image": "images/Gevalia.jpg"
-    },
-    {
-      "id":2,
-      "name": "Stumptown Coffee Roasters",
-      "categories": "Whole Bean Coffee",
-      "price": "14.99",
-      "promotion": "10% Off Subscription",
-      "image": "images/Stumptown.jpg"
-      
-    },
-    {
-      "id":3,
-      "name": "Caribou Coffee",
-      "categories": "Whole Bean Coffee",
-      "price": "8.49",
-      "promotion": "Free Shipping Over $50",
-      "image": "images/Caribou.jpg"
-    },
-    {
-      "id":4,
-      "name": "Death Wish Coffee",
-      "categories": "Whole Bean Coffee",
-      "price": "15.99",
-      "promotion": "Limited Time: 20% Off",
-      "image": "images/Death.jpg"
-    },
-    {
-      "id":5,
-      "name": "Bonka Coffee",
-      "categories": "Instant Coffee",
-      "price": "5.99",
-      "promotion": "Special Offer: Buy 2, Get 1 Free",
-      "image": "images/Bonka.jpg"
-    },
-    {
-      "id":6,
-      "name": "Green Mountain Coffee",
-      "categories": "Whole Bean Coffee",
-      "price": "7.99",
-      "promotion": "Save 15% with Subscribe & Save",
-      "image": "images/Green.jpg"
-    },
-    {
-      "id":7,
-      "name": "Café Bustelo",
-      "categories":  "Espresso",
-      "price": "4.99",
-      "promotion": "Limited Time Offer: 20% Off",
-      "image": "images/Bustelo.jpg"
-    },
-    {
-      "id":8,
-      "name": "Melitta Coffee",
-      "categories": "Whole Bean Coffee",
-      "price": "9.99",
-      "promotion": "10% Off First Subscription",
-      "image": "images/Melitta.jpg"
-    },
-    {
-      "id":9,
-      "name": "Eight O'Clock Coffee",
-      "categories": "Whole Bean Coffee",
-      "price": "6.49",
-      "promotion": "Buy 1, Get 1 50% Off",
-      "image": "images/Eight.jpg"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Gevalia",
+    "categories": "Whole Bean Coffee",
+    "price": "6.99",
+    "promotion": "Buy 2, Get 1 Free",
+    "image": "images/Gevalia.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Stumptown Coffee Roasters",
+    "categories": "Whole Bean Coffee",
+    "price": "14.99",
+    "promotion": "10% Off Subscription",
+    "image": "images/Stumptown.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Caribou Coffee",
+    "categories": "Whole Bean Coffee",
+    "price": "8.49",
+    "promotion": "Free Shipping Over $50",
+    "image": "images/Caribou.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Death Wish Coffee",
+    "categories": "Whole Bean Coffee",
+    "price": "15.99",
+    "promotion": "Limited Time: 20% Off",
+    "image": "images/Death.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Bonka Coffee",
+    "categories": "Instant Coffee",
+    "price": "5.99",
+    "promotion": "Special Offer: Buy 2, Get 1 Free",
+    "image": "images/Bonka.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Green Mountain Coffee",
+    "categories": "Whole Bean Coffee",
+    "price": "7.99",
+    "promotion": "Save 15% with Subscribe & Save",
+    "image": "images/Green.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Café Bustelo",
+    "categories": "Espresso",
+    "price": "4.99",
+    "promotion": "Limited Time Offer: 20% Off",
+    "image": "images/Bustelo.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Melitta Coffee",
+    "categories": "Whole Bean Coffee",
+    "price": "9.99",
+    "promotion": "10% Off First Subscription",
+    "image": "images/Melitta.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Eight O'Clock Coffee",
+    "categories": "Whole Bean Coffee",
+    "price": "6.49",
+    "promotion": "Buy 1, Get 1 50% Off",
+    "image": "images/Eight.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Lavazza Espresso",
+    "categories": "Espresso",
+    "price": "12.49",
+    "promotion": "Free Shipping on Orders Over $25",
+    "image": "images/Lavazza.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Folgers Classic Roast",
+    "categories": "Ground Coffee",
+    "price": "5.99",
+    "promotion": "Buy 3, Save 10%",
+    "image": "images/Folgers.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Peet's Coffee",
+    "categories": "Whole Bean Coffee",
+    "price": "11.99",
+    "promotion": "Save $5 on First Order",
+    "image": "images/Peets.jpg"
+  }
+]
