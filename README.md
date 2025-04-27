@@ -5,3 +5,8 @@ The project involves creating an e-commerce website for a fictional company that
 
 technology used :
 HTML , CSS , JS , JSON & AJAX
+
+
+check out the project :
+
+https://mohcine-ghazouani.github.io/Coffee_Shop/
